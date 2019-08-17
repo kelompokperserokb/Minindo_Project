@@ -16,7 +16,7 @@ Supports Thumbs: true
 }
 
 .slider-content {
-  padding: 180px 60px;
+  padding: 300px 60px;
 }
 
 .nivo-caption::after {
@@ -77,12 +77,14 @@ Supports Thumbs: true
 
 .ready-btn.right-btn {
   margin-right: 15px;
-  background: #3EC1D5;
+  background: #000000;
+	position: center;
+	width: 300px;
   border: 1px solid #3EC1D5 !important;
 }
 
 .ready-btn.right-btn:hover {
-  background: transparent !important;
+  background: #3EC1D5 !important;
   border: 1px solid #fff !important;
 }
 
