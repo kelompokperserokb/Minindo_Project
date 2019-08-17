@@ -269,9 +269,12 @@ div#preloader {
 }
 
 .navbar-header a.navbar-brand {
+  position: absolute;
+  z-index: 2;
+  left: 60px;
   display: inline-block;
   height: 70px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .main-menu ul.navbar-nav li {
@@ -410,6 +413,26 @@ div#preloader {
   display: block;
 }
 
+.headnav {
+  float: right;
+  margin: 35px 0 0 0;
+  border-bottom: 1px dotted #e6e6e6;
+}
+
+.row.nomargin, .row-fluid.nomargin {
+  margin-bottom: 0;
+}
+
+.buttonSign {
+  float : right;
+  padding-top: 20px;
+  color: white;
+}
+
+.buttonSign:active{
+
+}
+
 /*--------------------------------*/
 
 /* 2.1. Stick menu
@@ -424,9 +447,19 @@ div#preloader {
   z-index: 1000;
 }
 
+.header-area.stick .buttonSign {
+  display: none;
+}
+
 .stick .navbar-header a.navbar-brand {
   display: inline-block;
+  padding-top: 0px;
   height: 90px;
+}
+
+.stick .navbar-header img {
+  width : 64px;
+  height: 64px;
 }
 
 .stick .navbar-brand>img {
