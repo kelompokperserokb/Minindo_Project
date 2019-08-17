@@ -88,6 +88,19 @@ Supports Thumbs: true
   border: 1px solid #fff !important;
 }
 
+.ready-btn.middle-btn {
+  margin : auto;
+  background: #000000;
+  position: center;
+  width: 300px;
+  border: 1px solid #3EC1D5 !important;
+}
+
+.ready-btn.middle-btn:hover {
+  background: #3EC1D5 !important;
+  border: 1px solid #fff !important;
+}
+
 .nivo-controlNav {
   bottom: 0;
   left: 0;
