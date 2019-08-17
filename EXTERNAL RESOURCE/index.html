@@ -62,7 +62,7 @@
               </button>
               <!-- Brand -->
               <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                <img src="img/logo-square.png" alt="" width="90px" height="90px"/>
+                <img src="img/logo-square.png" alt="" width="90px" height="90px" margin="auto"/>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!--<img src="img/logo.png" alt="" title="">-->
               </a>
@@ -73,9 +73,9 @@
         <div class = "row">
           <div class="col-md-12 col-sm-12">
             <div class = "buttonSign">
-              <a href="#"> Sign In </a>
+              <a href="#" onclick="openFormSignIn()" data-toggle="modal"> Sign In </a>
               /
-              <a href="#"> Sign Up </a>
+              <a href="#" onclick="openFormSignUp()"> Sign Up </a>
             </div>
           </div>
         </div>
@@ -117,6 +117,49 @@
     </div>
     <!-- header-area end -->
   </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="form-popup center-block" id="signin">
+          <form action="" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeFormSignIn()">X</button>
+            <h2>Login</h2>
+
+            <label for="emaila"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+
+            <a href="#" onclick="closeFormSignIn(),openFormSignUp()"> Don't have an account? </a>
+          </form>
+        </div>
+
+        <div class="form-popup center-block" id="signup">
+          <form action="" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeFormSignUp()">X</button>
+            <h2>Registration</h2>
+
+            <label for="emaila"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="confirm-psw"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Regist</button>
+
+            <a href="#" onclick="closeFormSignUp(),openFormSignIn()"> Have an account? </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- header end -->
 
   <!-- Start Slider Area -->
@@ -446,6 +489,8 @@
           <div class="section-headline text-center">
             <h2>How to Order</h2>
           </div>
+          <img class = "center-block" src="img/blog/1.jpg" alt="" />
+
         </div>
       </div>
 
@@ -833,10 +878,42 @@
   <script src="lib/appear/jquery.appear.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
+  <script>
+    function openFormSignIn() {
+      document.getElementById("signin").style.display = "block";
+      document.getElementById("popup").style.display = "block";
+      document.
+      document.body.classList.add("no-scroll");
+
+    }
+
+    function closeFormSignIn() {
+      document.getElementById("signin").style.display = "none";
+      document.getElementById("popup").style.display = "none";
+      document.body.classList.remove("no-scroll");
+    }
+
+    function openFormSignUp() {
+      document.getElementById("signup").style.display = "block";
+      document.getElementById("popup").style.display = "block";
+      document.body.classList.add("no-scroll");
+
+    }
+
+    function closeFormSignUp() {
+      document.getElementById("signup").style.display = "none";
+      document.getElementById("popup").style.display = "none";
+      document.body.classList.remove("no-scroll");
+    }
+  </script>
+
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <script src="js/main.js"></script>
+
+
+  <div class="modal-backdrop fade in" id="popup"> </div>
 </body>
 
 </html>
