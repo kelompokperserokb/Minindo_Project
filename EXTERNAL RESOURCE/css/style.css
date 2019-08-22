@@ -267,8 +267,18 @@ div#preloader {
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.40);
   z-index: 9;
+}
+
+.top-header {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.bottom-header {
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
 }
 
 .navbar-header a.navbar-brand {
@@ -430,13 +440,25 @@ div#preloader {
 }
 
 .buttonSign {
-  float : right;
+  text-align: center;
   padding-top: 20px;
   color: white;
+  width: 100%;
+  position: relative;
 }
 
 .buttonSign:active{
 
+}
+
+
+#navbar-example{
+  display: flex !important;
+  justify-content: center;
+}
+
+ul#horizontal-list li:not(:first-child){
+  padding: 0 0 0 10em;
 }
 
 /*--------------------------------*/
@@ -445,21 +467,17 @@ div#preloader {
 /*--------------------------------*/
 
 .header-area.stick {
-  background-color: rgba(0, 0, 0, 1);
-  height: 70px;
+  height: 100%;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 
-.header-area.stick .buttonSign {
-  display: none;
-}
 
 .stick .navbar-header a.navbar-brand {
   display: inline-block;
-  padding-top: 0px;
+  padding-top: 10px;
   height: 90px;
 }
 

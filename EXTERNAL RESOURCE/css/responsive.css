@@ -137,6 +137,13 @@
     padding: 0;
     margin-top: 0;
   }
+
+  .nav.navbar-nav.navbar-center, .stick .nav.navbar-nav.navbar-center {
+    background-color: #252525;
+    padding: 0;
+    margin-top: 0;
+  }
+
   .main-menu ul.navbar-nav li, .stick .main-menu ul.navbar-nav li {
     display: block;
   }
