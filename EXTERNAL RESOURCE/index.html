@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>eBusiness Bootstrap Template</title>
+  <title>OneTech</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -24,6 +24,7 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Nivo Slider Theme -->
   <link href="css/nivo-slider-theme.css" rel="stylesheet">
@@ -62,7 +63,7 @@
                         </button>
                         <!-- Brand -->
                         <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                            <h1><span>One</span>Tech</h1>
+                            <h1 style="color: black"><span>One</span>Tech</h1>
                             <!-- Uncomment below if you prefer to use an image logo -->
                             <!--<img src="img/logo.png" alt="" title="">-->
                         </a>
@@ -74,13 +75,16 @@
                       <button><i class="fa fa-search"></i></button>
                   </form>
               </div>
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-2 col-sm-2">
                     <div class = "buttonSign">
-                        <a href="#"> Sign In </a>
-                        /
-                        <a href="#"> Sign Up </a>
+						<a href="#">Log In</a> | <a href="#">Sign Up</a>
                     </div>
                 </div>
+				<div class="col-md-1 col-sm-1">
+					<a class="services-icon" href="#">
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+				</div>
             </div>
           </div>
         </div>
@@ -97,19 +101,16 @@
                   <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                     <ul class="nav navbar-nav" id="horizontal-list">
                       <li class="active">
-                        <a class="page-scroll" href="#home">Home</a>
+                        <a class="page-scroll" href="#">Welding</a>
                       </li>
                       <li>
-                        <a class="page-scroll" href="#about">About Us</a>
-                      </li>
-                      <li class="dropdown">
-                        <a class="page-scroll" href="#products">Products</a>
+                        <a class="page-scroll" href="#">Rubber</a>
                       </li>
                       <li>
-                        <a class="page-scroll" href="#how">How to Order</a>
+                        <a class="page-scroll" href="#">Paint</a>
                       </li>
                       <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#">Others</a>
                       </li>
                     </ul>
                   </div>
@@ -127,180 +128,176 @@
   <!-- header end -->
 
   <!-- Start Slider Area -->
-  <div id="home" class="slider-area">
-    <div class="bend niceties preview-2">
-      <div id="ensign-nivoslider" class="slides">
-        <img src="img/slider/1.jpg" alt="" title="#slider-direction-1" />
-        <img src="img/slider/2.jpg" alt="" title="#slider-direction-2" />
-        <img src="img/slider/3.jpg" alt="" title="#slider-direction-3" />
-      </div>
+  <!DOCTYPE html>
+  <html>
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <style>
+		  * {box-sizing: border-box}
+		  body {font-family: Verdana, sans-serif; margin:0}
+		  .mySlides {display: none}
+		  img {vertical-align: middle;}
 
-      <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Minindo Artha Gemilang </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Your Mining Solution Service</h1>
-                </div>
-                <!-- layer 3 --><!--
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		  /* Slideshow container */
+		  .slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+		  }
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Minindo Artha Gemilang </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Your Mining Solution Service</h1>
-                </div>
-                <!-- layer 3 --><!--
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		  /* Next & previous buttons */
+		  .prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+		  }
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Minindo Artha Gemilang </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Your Mining Solution Service</h1>
-                </div>
-                <!-- layer 3 --><!--
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		  /* Position the "next button" to the right */
+		  .next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+		  }
+
+		  /* On hover, add a black background color with a little bit see-through */
+		  .prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+		  }
+
+		  /* Caption text */
+		  .text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+		  }
+
+		  /* Number text (1/3 etc) */
+		  .numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+		  }
+
+		  /* The dots/bullets/indicators */
+		  .dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+		  }
+
+		  .active, .dot:hover {
+			  background-color: #717171;
+		  }
+
+		  .faded {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+		  }
+
+		  @-webkit-keyframes faded {
+			  from {opacity: .4}
+			  to {opacity: 1}
+		  }
+
+		  @keyframes faded {
+			  from {opacity: .4}
+			  to {opacity: 1}
+		  }
+
+		  /* On smaller screens, decrease text size */
+		  @media only screen and (max-width: 300px) {
+			  .prev, .next,.text {font-size: 11px}
+		  }
+	  </style>
+  </head>
+  <body>
+
+  <div class="slideshow-container">
+
+	  <div class="mySlides faded">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="img/slider/1.jpg" style="width:100%">
+		  <div class="text">Caption Text</div>
+	  </div>
+
+	  <div class="mySlides faded">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="img/slider/2.jpg" style="width:100%">
+		  <div class="text">Caption Two</div>
+	  </div>
+
+	  <div class="mySlides faded">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="img/slider/3.jpg" style="width:100%">
+		  <div class="text">Caption Three</div>
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
   </div>
+  <br>
+
+  <div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+          showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+      }
+  </script>
+
+  </body>
+  </html>
+
   <!-- End Slider Area -->
-
-  <!-- Start About area -->
-  <div id="about" class="about-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>About Us</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- single-well start-->
-        <!-- single-well end-->
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="text-center">
-            <div class="single-well">
-              <a href="#">
-                <h4 class="sec-head">Minindo - Your Mining Solution Service</h4>
-              </a>
-              <p>
-                Tokopedia merupakan situs jual beli online di Indonesia yang memiliki jutaan toko online dan menjual berbagai macam produk untuk memenuhi kebutuhan Anda. Belanja online terasa semakin mudah dan menyenangkan saat ini karena apapun yang Anda inginkan pasti bisa ditemukan di Tokopedia. Cek barang kesukaanmu, belanja kado terindah untuk si dia, beli berbagai kebutuhan rumah tangga, beli gadget terbaru yang sedang tren, belanja pakaian yang sudah kamu idamkan, sampai dengan bayar tagihan listrik setiap bulan, semua bisa kamu lakukan hanya dengan sekali klik
-              </p>
-				<a class="ready-btn middle-btn page-scroll" href="#">Learn More</a>
-			</div>
-          </div>
-        </div>
-        <!-- End col-->
-      </div>
-    </div>
-    <div class="container">
-      <div class="row text-center">
-        <div class="services-contents">
-          <!-- Start Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-                    <i class="fa fa-code"></i>
-                  </a>
-                  <h4>Transparan</h4>
-                  <p>
-                    Pembayaran anda baru diteruskan ke penual setelah barang Anda terima.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-                    <i class="fa fa-camera-retro"></i>
-                  </a>
-                  <h4>Aman</h4>
-                  <p>
-                    Bandingkan review untuk berbagai online shop terpercaya se-Indonesia.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-                    <i class="fa fa-wordpress"></i>
-                  </a>
-                  <h4>Fasilitas Escrow Gratisc</h4>
-                  <p>
-                    Fasilitas Escrow (Rekening Bersama) Tokopedia tidak dikenakan biaya tambahan
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End About area -->
 
   <!-- Start product Area -->
   <div id="products" class="portfolio-area area-padding fix">
@@ -448,199 +445,154 @@
   </div>
   <!-- awesome-product end -->
 
-  <!-- Start how Area -->
-  <div id="how" class="our-team-area area-padding">
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h2>How to Order</h2>
+            <h2></h2>
           </div>
-			<img class="center-block" src="img/about/alur.jpg" alt="">
-		</div>
+        </div>
       </div>
 
-    </div>
-  </div>
-  <!-- End how Area -->
-
-  <!-- Start Suscrive Area -->
-  <div class="suscribe-area">
-    <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-          <div class="suscribe-text text-center">
-            <h3>"We want to better serve the Indonesia Mining Community."</h3>
+        <!-- single-well start-->
+        <!-- single-well end-->
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="text-center">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Minindo - Your Mining Solution Service</h4>
+              </a>
+              <p>
+                Tokopedia merupakan situs jual beli online di Indonesia yang memiliki jutaan toko online dan menjual berbagai macam produk untuk memenuhi kebutuhan Anda. Belanja online terasa semakin mudah dan menyenangkan saat ini karena apapun yang Anda inginkan pasti bisa ditemukan di Tokopedia. Cek barang kesukaanmu, belanja kado terindah untuk si dia, beli berbagai kebutuhan rumah tangga, beli gadget terbaru yang sedang tren, belanja pakaian yang sudah kamu idamkan, sampai dengan bayar tagihan listrik setiap bulan, semua bisa kamu lakukan hanya dengan sekali klik
+              </p>
+			</div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="services-contents">
+          <!-- Start Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-code"></i>
+                  </a>
+                  <h4>Transparan</h4>
+                  <p>
+					  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium doloremque laudantium
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-camera-retro"></i>
+                  </a>
+                  <h4>Aman</h4>
+                  <p>
+					  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium doloremque laudantium
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-wordpress"></i>
+                  </a>
+                  <h4>Terpercaya</h4>
+                  <p>
+					  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium doloremque laudantium
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Suscrive Area -->
-
-  <!-- Start contact Area -->
-  <div id="contact" class="contact-area">
-    <div class="contact-inner area-padding">
-      <div class="contact-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Contact us</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-mobile"></i>
-                <p>
-                  Call: +62 (21) 4585 6306 55<br>
-                  <span>Monday-Friday (9am-5pm)</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-envelope-o"></i>
-                <p>
-                  Email: sales@minindo.co.id<br>
-                  <span>Web: www.minindo.co.id</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-map-marker"></i>
-                <p>
-					Graha Rekso Unit E Lt 8. Kelapa Gading. <br>
-					<span>Jl. Boulevard Artha Gading Kav. A1</span> <br>
-					<span>Sentra Bisnis Artha Gading,</span> <br>
-					<span>Jakarta Utara 14240</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <!-- Start Google Map -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <!-- Start Map -->
-			  <div class="google-maps"><iframe width="550" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=filkom%20ub&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/best-wordpress-themes/">wordpress</a></div>
-            <!-- End Map -->
-          </div>
-          <!-- End Google Map -->
-
-          <!-- Start  contact -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-          <!-- End Left contact -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Contact Area -->
+  <!-- End About area -->
 
   <!-- Start Footer bottom Area -->
   <footer>
     <div class="footer-area">
       <div class="container">
         <div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="footer-content">
+					<div class="footer-head">
+						<h1 style="color: black"><span>One</span>Tech</h1>
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+						</p>
+					</div>
+				</div>
+			</div>
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="footer-content">
+            <div class="footer-content text-center">
               <div class="footer-head">
-                <div class="footer-logo">
-                  <img src="img/logo.png" alt="" title="">
-                </div>
-                <p>Minindo Artha Gemilang menyediakan Layanan Solusi Pertambangan di Indonesia</p>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Head Office</h4>
-                <p>
-					Graha Rekso Unit E Lt 8. Kelapa Gading. Jl. Boulevard Artha Gading Kav. A1 Sentra Bisnis Artha Gading, Jakarta Utara 14240
-                </p>
+                <h4>Information</h4>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> +62 (21) 4585 6306</p>
-                  <p><span>Email:</span> sales@minindo.co.id</p>
-                  <p><span>Working Hours:</span> 9am-5pm</p>
+                  <a href="#home"><p><span>About Us</span></p></a>
+				  <a href="#home"><p><span>How to Order</span></p></a>
+				  <a href="#home"><p><span>Payment</span></p></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-6 col-sm-6 col-xs-12">
 			<div class="footer-content">
-			  <div class="footer-head">
-				  <h4>Workshop 1</h4>
-				  <p>
-					  Jl. Inti 1 Blok C1 No.8, Bekasi International Industrial Estate Kawasan Hyundai Lippo Cikarang, Bekasi 17550
-				  </p>
-				  <div class="footer-contacts">
-					  <p><span>Tel:</span> +62 (21) 89900203 - 205</p>
-					  <p><span>Fax:</span> +62 (21) 89900203</p>
-					  <p><span>Working Hours:</span> 9am-5pm</p>
-				  </div>
+			  <div class="footer-head text-center">
+				  <h4>-----Connect With Us-----</h4>
 			  </div>
-		     </div>
-		  </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-			<div class="footer-content">
-			  <div class="footer-head">
-				  <h4>Workshop 2 :</h4>
-				  <p>
-					  Jalan. Kenari II Blok G 1B - 11F Delta Silicon 5. Lippo Cikarang. Kelurahan Cicau, Kecamatan CIkarang Pusat, Kabupaten Bekasi, Jawa Barat
-				  </p>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer-contacts text-center">
+					<p><span>CS:</span> +62 (21) 4585 6306</p>
+					<p><span>Sales:</span> +62 (21) 4585 6306</p>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer-contacts">
+				  <div class="form contact-form">
+					  <div id="sendmessage">Your message has been sent. Thank you!</div>
+					  <div id="errormessage"></div>
+					  <form action="" method="post" role="form" class="contactForm">
+						  <div class="form-group">
+							  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+							  <div class="validation"></div>
+						  </div>
+						  <div class="form-group">
+							  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+							  <div class="validation"></div>
+						  </div>
+						  <div class="form-group">
+							  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+							  <div class="validation"></div>
+						  </div>
+						  <div class="form-group">
+							  <input type="text" class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+							  <div class="validation"></div>
+						  </div>
+						  <div class="text-center"><button type="submit">Send Message</button></div>
+					  </form>
+				  </div>
 			  </div>
 		     </div>
 		  </div>

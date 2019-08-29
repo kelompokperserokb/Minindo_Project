@@ -31,7 +31,112 @@
   17.Blog Details CSS
 
 -----------------------------------------------------------------------------------*/
+/* Blocks */
+.wines-intro-section {
+	background-size: cover;
+	position: relative;
+	background-position: center center; }
+.wines-intro-section.container .wines-row {
+	height: 100vh;
+	min-height: 700px; }
+.wines-intro-section:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	background: #222;
+	opacity: .3;
+	border-bottom-right-radius: 0px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; }
+@media (max-width: 991.98px) {
+	.wines-intro-section:before {
+		width: 100%; } }
+.wines-intro-section h1 {
+	font-size: 5rem;
+	font-weight: 300;
+	color: #fff;
+	font-family: "Montserrat";
+	font-weight: 900;
+	text-transform: uppercase; }
+@media (max-width: 991.98px) {
+	.wines-intro-section h1 {
+		font-size: 2rem; } }
+.wines-intro-section h1 strong {
+	font-weight: 700; }
+.wines-intro-section .wines-sub-title {
+	font-family: "Cinzel";
+	color: #fff;
+	font-size: 1.5rem; }
+.wines-intro-section p {
+	color: #fff;
+	font-size: 1.1rem; }
+.wines-intro-section p a {
+	color: #fff;
+	text-decoration: underline; }
 
+.wines-owl-slide-3, .wines-owl-slide, .wines-owl-style {
+	position: relative; }
+.wines-owl-slide-3 .wines-owl-stage, .wines-owl-slide .wines-owl-stage, .wines-owl-style .wines-owl-stage {
+	padding-top: 30px;
+	padding-bottom: 30px; }
+.wines-owl-slide-3 .wines-owl-nav .wines-owl-prev,
+.wines-owl-slide-3 .wines-owl-nav .wines-owl-next, .wines-owl-slide .wines-owl-nav .wines-owl-prev,
+.wines-owl-slide .wines-owl-nav .wines-owl-next, .wines-owl-style .wines-owl-nav .wines-owl-prev,
+.wines-owl-style .wines-owl-nav .wines-owl-next {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background: #fff; }
+.wines-owl-slide-3 .wines-owl-nav .wines-owl-prev > span,
+.wines-owl-slide-3 .wines-owl-nav .wines-owl-next > span, .wines-owl-slide .wines-owl-nav .wines-owl-prev > span,
+.wines-owl-slide .wines-owl-nav .wines-owl-next > span, .wines-owl-style .wines-owl-nav .wines-owl-prev > span,
+.wines-owl-style .wines-owl-nav .wines-owl-next > span {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); }
+.wines-owl-slide-3 .wines-owl-nav .wines-owl-prev, .wines-owl-slide .wines-owl-nav .wines-owl-prev, .wines-owl-style .wines-owl-nav .wines-owl-prev {
+	left: 0; }
+.wines-owl-slide-3 .wines-owl-nav .wines-owl-next, .wines-owl-slide .wines-owl-nav .wines-owl-next, .wines-owl-style .wines-owl-nav .wines-owl-next {
+	right: 0; }
+.wines-owl-slide-3 .wines-owl-dots, .wines-owl-slide .wines-owl-dots, .wines-owl-style .wines-owl-dots {
+	position: absolute;
+	bottom: -0px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center; }
+.wines-owl-slide-3 .wines-owl-dots .wines-owl-dot, .wines-owl-slide .wines-owl-dots .wines-owl-dot, .wines-owl-style .wines-owl-dots .wines-owl-dot {
+	display: inline-block; }
+.wines-owl-slide-3 .wines-owl-dots .wines-owl-dot > span, .wines-owl-slide .wines-owl-dots .wines-owl-dot > span, .wines-owl-style .wines-owl-dots .wines-owl-dot > span {
+	border-radius: 0%;
+	display: inline-block;
+	width: 18px;
+	height: 4px;
+	margin: 2px 5px;
+	background: rgba(0, 0, 0, 0.2); }
+.wines-owl-slide-3 .wines-owl-dots .wines-owl-dot.active > span, .wines-owl-slide .wines-owl-dots .wines-owl-dot.active > span, .wines-owl-style .wines-owl-dots .wines-owl-dot.active > span {
+	background: #930077; }
+
+.wines-owl-slide .wines-owl-nav {
+	display: none; }
+
+@media (max-width: 991.98px) {
+	.wines-owl-style .wines-owl-nav {
+		display: none; } }
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
@@ -442,7 +547,7 @@ div#preloader {
 .buttonSign {
   text-align: center;
   padding-top: 20px;
-  color: white;
+  color: black;
   width: 100%;
   position: relative;
 }
@@ -600,6 +705,7 @@ ul#horizontal-list li:not(:first-child){
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 20px;
+	padding-top: 10px;
 }
 
 .section-headline.services-head>h2 {
